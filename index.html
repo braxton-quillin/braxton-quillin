@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <title> Wordle? </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
     <div class="titleParent">
         <div id="title" class="titleChild"> WORSE WORDLE </div>
         <button class="retry" onClick="window.location.reload();">↺</button>
@@ -57,7 +60,7 @@
         </div>
     </div>
     <div class="keysParent">
-        <div class ="keysContainer">
+        <div class="keysContainer">
             <div class="keyRow">
                 <button id="q" class="key" onclick="letter('q');">q</button>
                 <button id="w" class="key" onclick="letter('w');">w</button>
@@ -71,7 +74,7 @@
                 <button id="p" class="key" onclick="letter('p');">p</button>
             </div>
             <div class="keyRow">
-                <div class= "spacer half"></div>
+                <div class="spacer half"></div>
                 <button id="a" class="key" onclick="letter('a');">a</button>
                 <button id="s" class="key" onclick="letter('s');">s</button>
                 <button id="d" class="key" onclick="letter('d');">d</button>
@@ -81,7 +84,7 @@
                 <button id="j" class="key" onclick="letter('j');">j</button>
                 <button id="k" class="key" onclick="letter('k');">k</button>
                 <button id="l" class="key" onclick="letter('l');">l</button>
-                <div class= "spacer half"></div>
+                <div class="spacer half"></div>
             </div>
             <div class="keyRow">
                 <button id="enter" class="enterKey" onclick="makeGuess();">ENTER</button>
@@ -96,6 +99,7 @@
             </div>
         </div>
     </div>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
 </html>
