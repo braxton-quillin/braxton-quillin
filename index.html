@@ -1,85 +1,101 @@
-<html>
-
-<head>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-
-<body>
-    <div id="container">
-        <div id="headerArea">
-            <div id="header"></div>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">DUMBosophy</a></li>
-                    <li><a href="#">Video JAmes</a></li>
-                    <li><a href="#">LIT AF</a></li>
-                    <li><a href="#">Writings</a></li>
-                    <li><a href="#">Silly BILLYS</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="flex">
-            <aside id="leftSidebar">
-                <h2>TBD</h2>
-                <div class="box">
-                    <p>Things I Enjoy!</p>
-                    <ul style="padding-left:10px;">
-                        GETTING MONEY
-                        GETTING DATES
-                        HAVING FUN
-                        <small>crying</small>
-                        GETTING DEGREES
-                    </ul>
-                </div>
-                <h2>Hi there!</h2>
-                <h3>Things I Used For This Site:</h3>
-                <ul>
-                    <li><a href="https://goblin-heart.net/sadgrl/projects/layout-builder/">Sadgrl's Layout Builder</a>
-                    </li>
-                    <li><a href="https://scripted.neocities.org/">Scripted Resources</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=V1BqNbckZYg">Magoonka's Neocities Tutorial</a></li>
-                </ul>
-            </aside>
-            <main>
-                <h1>I STOLE YOUR WEBSITE TEEHEE!</h1>
-                <p><strong>#1 Care Ethics HATER</strong></p>
-                <p>Howdy! I'm just using this to test my DNS don't kill me Rowan.</p>
-
-            </main>
-            <aside id="rightSidebar">
-                <h2></h2>
-                <div class="box">
-                    <p><strong>Languages!</strong></p>
-                    <ul style="padding-left:10px;">
-                        <li>English? Maybe</li>
-                    </ul>
-                </div>
-                <h2>Links!</h2>
-                <h3></h3>
-                <ul>
-                    <p>I kept these because i like you</p>
-                    <li><a href="https://medium.com/@roseswithoutgardens" target="_blank">Medium</a></li>
-                    <li><a href="https://youtube.com/@roseswithoutgardens" target="_blank">Youtube</a></li>
-                    <li><a href="https://roseswithoutgardens.itch.io/" target="_blank">Itch.io</a></li>
-                    <li><a href="https://x.com/RosesWOGardens" target="_blank">Twitter</a></li>
-                    <li><a href="https://bsky.app/profile/roseswithoutgarden.bsky.social" target="_blank">Bluesky</a>
-                    </li>
-
-                </ul>
-            </aside>
-        </div>
-        <footer id="footer">"If I knew that a fascist was a great poet, I'd shoot him anyway." - Martin Espada, <em><a
-                    href="https://www.amazon.com/Trouble-Ball-Poems-Mart%C3%ADn-Espada/dp/0393343561">The Trouble Ball:
-                    Poems</a></em></footer>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Wordle? </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="titleParent">
+        <div id="title" class="titleChild"> WORSE WORDLE </div>
+        <button class="retry" onClick="window.location.reload();">↺</button>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="javascript/cursor.js"></script>
-
-    <script src="javascript/flowers.js"></script>
-</body>
-
+    <div class="boardParent">
+        <div class="popUp" id="popUp"></div>
+        <div class="gridContainer">
+            <div class="row" id="row1">
+                <div id="letter1x1" class="letter"></div>
+                <div id="letter1x2" class="letter"></div>
+                <div id="letter1x3" class="letter"></div>
+                <div id="letter1x4" class="letter"></div>
+                <div id="letter1x5" class="letter"></div>
+            </div>
+            <div class="row" id="row2">
+                <div id="letter2x1" class="letter"></div>
+                <div id="letter2x2" class="letter"></div>
+                <div id="letter2x3" class="letter"></div>
+                <div id="letter2x4" class="letter"></div>
+                <div id="letter2x5" class="letter"></div>
+            </div>
+            <div class="row" id="row3">
+                <div id="letter3x1" class="letter"></div>
+                <div id="letter3x2" class="letter"></div>
+                <div id="letter3x3" class="letter"></div>
+                <div id="letter3x4" class="letter"></div>
+                <div id="letter3x5" class="letter"></div>
+            </div>
+            <div class="row" id="row4">
+                <div id="letter4x1" class="letter"></div>
+                <div id="letter4x2" class="letter"></div>
+                <div id="letter4x3" class="letter"></div>
+                <div id="letter4x4" class="letter"></div>
+                <div id="letter4x5" class="letter"></div>
+            </div>
+            <div class="row" id="row5">
+                <div id="letter5x1" class="letter"></div>
+                <div id="letter5x2" class="letter"></div>
+                <div id="letter5x3" class="letter"></div>
+                <div id="letter5x4" class="letter"></div>
+                <div id="letter5x5" class="letter"></div>
+            </div>
+            <div class="row" id="row6">
+                <div id="letter6x1" class="letter"></div>
+                <div id="letter6x2" class="letter"></div>
+                <div id="letter6x3" class="letter"></div>
+                <div id="letter6x4" class="letter"></div>
+                <div id="letter6x5" class="letter"></div>
+            </div>
+        </div>
+    </div>
+    <div class="keysParent">
+        <div class ="keysContainer">
+            <div class="keyRow">
+                <button id="q" class="key" onclick="letter('q');">q</button>
+                <button id="w" class="key" onclick="letter('w');">w</button>
+                <button id="e" class="key" onclick="letter('e');">e</button>
+                <button id="r" class="key" onclick="letter('r');">r</button>
+                <button id="t" class="key" onclick="letter('t');">t</button>
+                <button id="y" class="key" onclick="letter('y');">y</button>
+                <button id="u" class="key" onclick="letter('u');">u</button>
+                <button id="i" class="key" onclick="letter('i');">i</button>
+                <button id="o" class="key" onclick="letter('o');">o</button>
+                <button id="p" class="key" onclick="letter('p');">p</button>
+            </div>
+            <div class="keyRow">
+                <div class= "spacer half"></div>
+                <button id="a" class="key" onclick="letter('a');">a</button>
+                <button id="s" class="key" onclick="letter('s');">s</button>
+                <button id="d" class="key" onclick="letter('d');">d</button>
+                <button id="f" class="key" onclick="letter('f');">f</button>
+                <button id="g" class="key" onclick="letter('g');">g</button>
+                <button id="h" class="key" onclick="letter('h');">h</button>
+                <button id="j" class="key" onclick="letter('j');">j</button>
+                <button id="k" class="key" onclick="letter('k');">k</button>
+                <button id="l" class="key" onclick="letter('l');">l</button>
+                <div class= "spacer half"></div>
+            </div>
+            <div class="keyRow">
+                <button id="enter" class="enterKey" onclick="makeGuess();">ENTER</button>
+                <button id="z" class="key" onclick="letter('z');">z</button>
+                <button id="x" class="key" onclick="letter('x');">x</button>
+                <button id="c" class="key" onclick="letter('c');">c</button>
+                <button id="v" class="key" onclick="letter('v');">v</button>
+                <button id="b" class="key" onclick="letter('b');">b</button>
+                <button id="n" class="key" onclick="letter('n');">n</button>
+                <button id="m" class="key" onclick="letter('m');">m</button>
+                <button id="DELETE" class="deleteKey" onclick="deleteLast();">⌫</button>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
